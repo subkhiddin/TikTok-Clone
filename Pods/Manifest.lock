@@ -1,4 +1,5 @@
 PODS:
+  - Appirater (2.3.1)
   - Firebase (10.28.1):
     - Firebase/Core (= 10.28.1)
   - Firebase/Core (10.28.1):
@@ -142,8 +143,12 @@ PODS:
   - PromisesSwift (2.4.0):
     - PromisesObjC (= 2.4.0)
   - RecaptchaInterop (100.0.0)
+  - SDWebImage (5.19.4):
+    - SDWebImage/Core (= 5.19.4)
+  - SDWebImage/Core (5.19.4)
 
 DEPENDENCIES:
+  - Appirater
   - Firebase
   - FirebaseAnalytics
   - FirebaseAuth
@@ -151,9 +156,11 @@ DEPENDENCIES:
   - FirebaseCrashlytics
   - FirebaseDatabase
   - FirebaseStorage
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
+    - Appirater
     - Firebase
     - FirebaseAnalytics
     - FirebaseAppCheckInterop
@@ -178,8 +185,10 @@ SPEC REPOS:
     - PromisesObjC
     - PromisesSwift
     - RecaptchaInterop
+    - SDWebImage
 
 SPEC CHECKSUMS:
+  Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
   Firebase: 49e62242b3ae422a002ab647a7e62a332a8c3ec1
   FirebaseAnalytics: 1e06fe7d246af7230b08d1d9cdca54a4624dd461
   FirebaseAppCheckInterop: 5315f40293191bfec04b2cfab0215760e441540a
@@ -204,7 +213,8 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
+  SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
 
-PODFILE CHECKSUM: b12d0ea5590fffae6088083153852f43ef77e2ba
+PODFILE CHECKSUM: 7a855cc7cd697361278fb15c53e309be4e07d6c3
 
 COCOAPODS: 1.15.2

@@ -12,6 +12,8 @@ target 'TikTok Clone' do
   pod 'FirebaseAnalytics'
   pod 'FirebaseCrashlytics'
 
+  pod 'Appirater' 
+  pod 'SDWebImage'
   
 
 end
