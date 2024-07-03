@@ -23,12 +23,13 @@
 		DFEAABF42C3413E8002D1EDF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAABF32C3413E8002D1EDF /* SettingsViewController.swift */; };
 		DFEAABF62C341425002D1EDF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAABF52C341425002D1EDF /* TabBarViewController.swift */; };
 		DFEAABFA2C34150C002D1EDF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAABF92C34150C002D1EDF /* PostViewController.swift */; };
-		DFEAABFC2C341528002D1EDF /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAABFB2C341528002D1EDF /* APICaller.swift */; };
 		DFEAABFE2C34153F002D1EDF /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAABFD2C34153F002D1EDF /* StoreManager.swift */; };
 		DFEAAC002C341559002D1EDF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAABFF2C341559002D1EDF /* DatabaseManager.swift */; };
 		DFEAAC022C341586002D1EDF /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAAC012C341586002D1EDF /* AuthenticationManager.swift */; };
 		DFEAAC042C34159C002D1EDF /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEAAC032C34159C002D1EDF /* HapticsManager.swift */; };
 		DFEAAC062C341B23002D1EDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFEAAC052C341B23002D1EDF /* GoogleService-Info.plist */; };
+		DFF683B72C3526AD00887FD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF683B62C3526AD00887FD5 /* Extensions.swift */; };
+		DFF683B92C354C4E00887FD5 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF683B82C354C4E00887FD5 /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,12 +53,13 @@
 		DFEAABF32C3413E8002D1EDF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DFEAABF52C341425002D1EDF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DFEAABF92C34150C002D1EDF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		DFEAABFB2C341528002D1EDF /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		DFEAABFD2C34153F002D1EDF /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		DFEAABFF2C341559002D1EDF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		DFEAAC012C341586002D1EDF /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		DFEAAC032C34159C002D1EDF /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		DFEAAC052C341B23002D1EDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DFF683B62C3526AD00887FD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DFF683B82C354C4E00887FD5 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +118,6 @@
 				DFEAABDF2C340FC1002D1EDF /* Views */,
 				DFEAABDE2C340FB0002D1EDF /* Controllers */,
 				DFEAABDD2C340F82002D1EDF /* Resources */,
-				DFEAABD22C340912002D1EDF /* Assets.xcassets */,
-				DFEAABD72C340912002D1EDF /* Info.plist */,
-				DFEAAC052C341B23002D1EDF /* GoogleService-Info.plist */,
 			);
 			path = "TikTok Clone";
 			sourceTree = "<group>";
@@ -128,6 +127,10 @@
 			children = (
 				DFEAABCB2C34090E002D1EDF /* SceneDelegate.swift */,
 				DFEAABC92C34090E002D1EDF /* AppDelegate.swift */,
+				DFEAABD22C340912002D1EDF /* Assets.xcassets */,
+				DFF683B62C3526AD00887FD5 /* Extensions.swift */,
+				DFEAABD72C340912002D1EDF /* Info.plist */,
+				DFEAAC052C341B23002D1EDF /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 		DFEAABE02C340FD2002D1EDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DFF683B82C354C4E00887FD5 /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,7 +171,6 @@
 		DFEAABE22C340FF1002D1EDF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				DFEAABFB2C341528002D1EDF /* APICaller.swift */,
 				DFEAABFD2C34153F002D1EDF /* StoreManager.swift */,
 				DFEAABFF2C341559002D1EDF /* DatabaseManager.swift */,
 				DFEAAC012C341586002D1EDF /* AuthenticationManager.swift */,
@@ -350,11 +353,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFEAAC042C34159C002D1EDF /* HapticsManager.swift in Sources */,
+				DFF683B72C3526AD00887FD5 /* Extensions.swift in Sources */,
 				DFEAAC002C341559002D1EDF /* DatabaseManager.swift in Sources */,
 				DFEAABE62C341111002D1EDF /* ExploreViewController.swift in Sources */,
 				DFEAABEE2C341198002D1EDF /* UserListViewController.swift in Sources */,
 				DFEAABF42C3413E8002D1EDF /* SettingsViewController.swift in Sources */,
-				DFEAABFC2C341528002D1EDF /* APICaller.swift in Sources */,
 				DFEAABFA2C34150C002D1EDF /* PostViewController.swift in Sources */,
 				DFEAABE82C341137002D1EDF /* CameraViewController.swift in Sources */,
 				DFEAABF62C341425002D1EDF /* TabBarViewController.swift in Sources */,
@@ -363,6 +366,7 @@
 				DFEAAC022C341586002D1EDF /* AuthenticationManager.swift in Sources */,
 				DFEAABCE2C34090E002D1EDF /* HomeViewController.swift in Sources */,
 				DFEAABF02C3411B0002D1EDF /* SignInViewController.swift in Sources */,
+				DFF683B92C354C4E00887FD5 /* PostModel.swift in Sources */,
 				DFEAABEC2C341179002D1EDF /* ProfileViewController.swift in Sources */,
 				DFEAABFE2C34153F002D1EDF /* StoreManager.swift in Sources */,
 				DFEAABCA2C34090E002D1EDF /* AppDelegate.swift in Sources */,
@@ -513,11 +517,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X896SVF3JJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TikTok Clone/Info.plist";
+				INFOPLIST_FILE = "TikTok Clone/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,11 +546,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X896SVF3JJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TikTok Clone/Info.plist";
+				INFOPLIST_FILE = "TikTok Clone/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
